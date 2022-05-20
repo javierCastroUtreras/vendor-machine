@@ -23,4 +23,6 @@ Route::view('products','products')->middleware('auth');
 
 Route::post('/login', [LoginController::class, 'login']);
 
+Route::put('/login', [LoginController::class, 'logout']);
+
 
