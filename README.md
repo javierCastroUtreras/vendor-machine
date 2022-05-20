@@ -9,3 +9,15 @@ Importar la creación de la base de datos del archivo `BBDD.sql`
 
 Una vez instaladas todas las dependencias
 `php artisan serve`
+
+
+
+
+migrar las bases de datos con: php artisan migrate. desde laravel
+
+agregar usuarios a la base de datos (la contraseña es 'password' para los dos usuarios):
+
+INSERT INTO users (name,password,balance) VALUES ('javier','$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi',10);
+INSERT INTO users (name,password,balance) VALUES ('roger','$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi',10); 
+
+
