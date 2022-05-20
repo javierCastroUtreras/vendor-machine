@@ -1,6 +1,7 @@
 <?php
-
+//use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::resource('products',ProductController::class);
+
+Route::view('/','welcome');
+Route::view('login','login')->name('login')->middleware('guest');
+Route::view('products','products')->middleware('auth');
+
+
+Route::post('/login', [LoginController::class, 'login']);
+
+
