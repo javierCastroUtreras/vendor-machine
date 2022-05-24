@@ -20,7 +20,7 @@
                 <li>Carbohidrats: {{$product->carbohidrats}}</li>
                 <li>Proteines: {{$product->proteines}}</li>
             </ul>
-            <a class="link" href="product/buy/{{ $product->id }}">Comprar</a
+            <a class="link" href="buy/{{ $product->id }}">Comprar</a
         </div>
 
     </head>
