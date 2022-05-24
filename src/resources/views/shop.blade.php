@@ -11,7 +11,7 @@
         <div class="products">
             @foreach ($products as $product)
                 <a class="item" href="localhost/detail/{{ $product->id }}">
-                    <img src="{{ $product->img }}" alt="" srcset="">
+                    <img src="../img/{{ $product->img }}" alt="" srcset="">
                     <h2>Preu: {{ $product->preu }}</h2>
                 </a>
             @endforeach
