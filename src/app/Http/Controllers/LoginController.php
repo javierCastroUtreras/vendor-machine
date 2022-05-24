@@ -17,12 +17,12 @@ class LoginController extends Controller
 
          $request->session()->regenerate();
 
-         return redirect()->intended('/products');
+         return redirect()->intended('/shop');
          }
            return redirect('login');
     }
 
-    public function logout(Request$request){
+    public function logout(Request $request){
 
         Auth::logout();
 

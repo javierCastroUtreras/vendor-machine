@@ -34,6 +34,7 @@ class Product extends Model
 		'greixos' => 'required',
 		'carbohidrats' => 'required',
 		'proteines' => 'required',
+    'bought' => 'bought',
     ];
 
     protected $perPage = 20;
@@ -43,7 +44,7 @@ class Product extends Model
      *
      * @var array
      */
-    protected $fillable = ['img','preu','procedencia','kcud','kg100g','greixos','carbohidrats','proteines'];
+    protected $fillable = ['img','preu','procedencia','kcud','kg100g','greixos','carbohidrats','bought'];
 
 
 
