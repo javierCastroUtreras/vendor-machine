@@ -1,6 +1,6 @@
 <a href="/"> Inicio </a>
 @auth
-<a href="/shop">Products </a>
+<a href="/products">Products </a>
 
 <form action="login" method="post">
 @method('put')

@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="{{str_replace('_','-',app()->getLocale())}}">
-    <head>
+    <head > <script>
+        setTimeout(() => {
+  window.location.replace('/login');
+}, "5000")
+
+    </script>
         <meta charset="utf-8">
         <meta name="viewport"content="width=device-width,initial-scale=1">
         <title>SOLD</title>
@@ -9,10 +14,6 @@
 
 
         <H3>REDIRECTING....</H3>
-
-
-        {{sleep(5);
-            header('Location: login'); }}
 
 
 
