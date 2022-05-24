@@ -14,7 +14,7 @@ class ProductController extends Controller
     public function allProducts() {
         $products = \DB::table('products')->get();
         // return view('/shop')->with('products', $products);
-        echo $products;
+       // echo $products;
         return view('shop', array('products'=>$products));
     }
 
@@ -31,13 +31,15 @@ class ProductController extends Controller
         $item['carbohidrats'] = $products->carbohidrats;
         $item['proteines'] = $products->proteines;
         $product =  json_encode($item);
-        echo $product;
+        return view('detail', array('product'=>json_decode($product)));
+        //echo $product;
+      //  echo json_encode($item);
     }
 
     public function buyProduct(Request $request) {
         Product::where('id', $request->id)
             ->update([
-            'bought'=> \DB::raw('bought+1'), 
+            'bought'=> \DB::raw('bought+1'),
         ]);
     }
 }

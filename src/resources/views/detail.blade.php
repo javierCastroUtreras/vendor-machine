@@ -8,14 +8,16 @@
         <h4>Welcome {{ auth()->user()->name }} </h4>
         <h4>Balance: {{ auth()->user()->balance }} € </h4>
         <h1>Products</h1>
-        <div class="products" style=" display: flex; gap: 20px; flex-wrap:wrap">
-            @foreach ($products as $product)
-                <a class="item" href="product/{{ $product->id }}">
-                    <img src="{{'/images/'.$product->img }}" alt="" style="width: 200px; height=200px">
-                    <h2>Preu: {{ $product->preu }}</h2>
-                </a>
-            @endforeach
-        </div>
+
+         {{$product->img}}
+         {{$product->id}}
+         {{$product->preu}}
+         {{$product->procedencia}}
+         {{$product->kcud}}
+         {{$product->kg100g}}
+         {{$product->greixos}}
+        {{ $product->carbohidrats}}
+         {{$product->proteines}}
     </head>
     <body>
     </body>
