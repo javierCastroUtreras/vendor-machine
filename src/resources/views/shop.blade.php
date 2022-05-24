@@ -8,13 +8,9 @@
         <h4>Welcome {{ auth()->user()->name }} </h4>
         <h4>Balance: {{ auth()->user()->balance }} € </h4>
         <h1>Products</h1>
-        @section('principal')
-            <h1>Informació de la pel·lícula</h1>
+        @section('llistat')
             <div>
-            Identificador: {{ $products->id }} <br />
-            Preu: {{ $products->preu }} <br />
-            Procedencia: {{ $products->procedencia }} <br />
-            Kcud: {{ $products->kcud }} <br />
+            Item: {{ $products[0]->procedencia }} <br />
             </div>
         @endsection
 
