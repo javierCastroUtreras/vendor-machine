@@ -13,8 +13,7 @@ class ProductController extends Controller
 {
     public function allProducts() {
         $products = \DB::table('products')->get();
-        // return view('/shop')->with($products);
-        // echo($products);
+        // return view('/shop')->with('products', $products);
         return view('shop', array('products'=>$products));
     }
 
@@ -30,7 +29,8 @@ class ProductController extends Controller
         $item['greixos'] = $products->greixos;
         $item['carbohidrats'] = $products->carbohidrats;
         $item['proteines'] = $products->proteines;
-        echo json_encode($item);
+        $product =  json_encode($item);
+        echo $product;
     }
 
     public function buyProduct(Request $request) {
