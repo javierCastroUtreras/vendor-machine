@@ -41,5 +41,6 @@ class ProductController extends Controller
             ->update([
             'bought'=> \DB::raw('bought+1'),
         ]);
+        return view('soldIt');
     }
 }
