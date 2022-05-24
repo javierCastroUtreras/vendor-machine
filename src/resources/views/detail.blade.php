@@ -6,7 +6,7 @@
         <title>Shop</title>
         @include('partials.nav')
         <h4>Benvingut {{ auth()->user()->name }} </h4>
-        <h4>Balance: {{ auth()->user()->balance }} € </h4>
+        <h4>Balanç: {{ auth()->user()->balance }} € </h4>
         <h1>Productes</h1>
         <div id="{{$product->id}}" class="product">
             <img src="{{'/images/'.$product->img }}" alt="" style="width: 500px; height=500px; overflow: cover">

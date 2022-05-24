@@ -6,7 +6,7 @@
         <title>Shop</title>
         @include('partials.nav')
         <h4>Benvingut {{ auth()->user()->name }} </h4>
-        <h4>Balance: {{ auth()->user()->balance }} € </h4>
+        <h4>Balanç: {{ auth()->user()->balance }} € </h4>
         <h1>Productes</h1>
         <div class="products" style=" display: flex; gap: 20px; flex-wrap:wrap">
             @foreach ($products as $product)
