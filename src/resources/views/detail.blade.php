@@ -13,14 +13,14 @@
             <h1>PREU: {{$product->preu}}</h1>
             <h2>Informació adicional</h2>
             <ul>
-                <li>{{$product->procedencia}}</li>
-                <li>{{$product->kcud}}</li>
-                <li>{{$product->kg100g}}</li>
-                <li>{{$product->greixos}}</li>
-                <li>{{$product->carbohidrats}}</li>
-                <li>{{$product->proteines}}</li>
+                <li>Procedencia: {{$product->procedencia}}</li>
+                <li>Kc per unitat: {{$product->kcud}}</li>
+                <li>Kc per cada 100g: {{$product->kg100g}}</li>
+                <li>Greixos: {{$product->greixos}}</li>
+                <li>Carbohidrats: {{$product->carbohidrats}}</li>
+                <li>Proteines: {{$product->proteines}}</li>
             </ul>
-            <a class="link" href="product/buy/{{ $product->id }}">
+            <a class="link" href="product/buy/{{ $product->id }}">Comprar</a
         </div>
 
     </head>
