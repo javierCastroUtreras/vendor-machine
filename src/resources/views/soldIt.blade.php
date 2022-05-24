@@ -8,12 +8,12 @@
     </script>
         <meta charset="utf-8">
         <meta name="viewport"content="width=device-width,initial-scale=1">
-        <title>SOLD</title>
+        <title>Venut</title>
         @include('partials.nav')
-        <h4> PRODUCT SOLD TO{{ auth()->user()->name }} </h4>
+        <h4> PRODUCTE VENUT A {{ auth()->user()->name }} </h4>
 
 
-        <H3>REDIRECTING....</H3>
+        <H3>REDIRECCIONANT....</H3>
 
 
 

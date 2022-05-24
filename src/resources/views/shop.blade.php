@@ -5,9 +5,9 @@
         <meta name="viewport"content="width=device-width,initial-scale=1">
         <title>Shop</title>
         @include('partials.nav')
-        <h4>Welcome {{ auth()->user()->name }} </h4>
+        <h4>Benvingut {{ auth()->user()->name }} </h4>
         <h4>Balance: {{ auth()->user()->balance }} € </h4>
-        <h1>Products</h1>
+        <h1>Productes</h1>
         <div class="products" style=" display: flex; gap: 20px; flex-wrap:wrap">
             @foreach ($products as $product)
                 <a class="item" href="product/{{ $product->id }}">
