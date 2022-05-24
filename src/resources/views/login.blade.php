@@ -13,10 +13,10 @@
     <form method="POST">
         @csrf
         <label>
-            <input name='name' type="tect" placeholder="Name...">
+            <input name='name' type="tect" placeholder="Nom...">
         </label><br>
         <label>
-            <input name='password' type="password" placeholder="Password...">
+            <input name='password' type="password" placeholder="Contrasenya...">
         </label><br>
                 <button type="submit"> Login </button>
     </form>
