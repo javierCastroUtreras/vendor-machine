@@ -14,6 +14,7 @@ class ProductController extends Controller
     public function allProducts() {
         $products = \DB::table('products')->get();
         // return view('/shop')->with('products', $products);
+        echo $products;
         return view('shop', array('products'=>$products));
     }
 

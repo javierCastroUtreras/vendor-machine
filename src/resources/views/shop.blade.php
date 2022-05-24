@@ -8,12 +8,12 @@
         <h4>Welcome {{ auth()->user()->name }} </h4>
         <h4>Balance: {{ auth()->user()->balance }} € </h4>
         <h1>Products</h1>
-        @section('llistat')
+        @foreach ($products as $product)
             <div>
-            Item: {{ $products[0]->procedencia }} <br />
+                <img src="{{ $product->img }}" alt="" srcset="">
+                <h2>Preu: {{ $product->preu }}</h2>
             </div>
-        @endsection
-
+        @endforeach
 
     </head>
     <body>
